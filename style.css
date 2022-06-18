@@ -1,0 +1,176 @@
+body {
+  background-image: url(images/background.jpg);
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: large;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.title {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: azure;
+  text-align: center;
+}
+
+.title-text {
+  margin: 0;
+  padding: 0.6%;
+  color: aliceblue;
+}
+
+.left-input {
+  width: 80%;
+  height: 8%;
+  margin: 2%;
+  padding: 2%;
+  text-transform: uppercase;
+}
+
+.right-disabled-input {
+  width: 80%;
+  margin: 2%;
+  padding: 12px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.left-side {
+  width: 46%;
+  height: 100%;
+  float: left;
+  background-color: rgba(39, 39, 39, 0.75);
+  margin: 2%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.right-side {
+  width: 46%;
+  height: 632px;
+  float: left;
+  background-color: rgba(39, 39, 39, 0.75);
+
+  margin: 2%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.side-title {
+  text-align: center;
+  color: aliceblue;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.buttons {
+  padding-top: 20px;
+}
+
+#calculate {
+  background-color: green;
+  width: 45%;
+  font-size: 28px;
+  margin: 2%;
+  border-radius: 10px;
+  border: none;
+  padding: 8px;
+}
+
+#calculate:hover {
+  background-color: rgb(45, 45, 45);
+  color: white;
+  transition-duration: 0.5s;
+}
+
+#reset {
+  background-color: red;
+  width: 45%;
+  font-size: 28px;
+  margin: 2%;
+  border-radius: 10px;
+  border: none;
+  padding: 8px;
+}
+
+#reset:hover {
+  background-color: rgb(45, 45, 45);
+  color: white;
+  transition-duration: 0.5s;
+}
+
+textarea {
+  resize: none;
+  padding: 12px;
+  margin: 2%;
+  border-radius: 8px;
+  width: 80%;
+  height: 132px;
+  border-color: black;
+  text-align: center;
+  background-color: #fff;
+  color: black;
+}
+
+input:focus {
+  background-color: #fff;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+@media only screen and (max-width: 800px) {
+  .left-side {
+    width: 96%;
+    height: 100%;
+    float: left;
+    background-color: rgba(39, 39, 39, 0.75);
+    margin: 2%;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .right-side {
+    width: 96%;
+    height: 100%;
+    float: left;
+    background-color: rgba(39, 39, 39, 0.75);
+    margin: 2%;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .left-input {
+    width: 80%;
+    height: 8%;
+    margin: 2%;
+    padding: 5%;
+    text-transform: uppercase;
+  }
+
+  .right-disabled-input {
+    height: 8%;
+    margin: 2%;
+    padding: 5%;
+  }
+
+  textarea {
+    padding: 14% 5% 14% 5%;
+    margin-bottom: 6%;
+  }
+
+  .right-side {
+    margin-bottom: 20%;
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Risk Management</title>
+  </head>
+  <body onload="fillCookieData()">
+    <div class="container">
+      <div class="title">
+        <h1 class="title-text">RISK MANAGEMENT</h1>
+      </div>
+      <div class="s left-side">
+        <p class="side-title">Insert data</p>
+        <input type="number" name="balance" id="balance" placeholder="Balance" class="left-input" />
+        <input type="number" name="risk" id="risk" placeholder="Risk" class="left-input" />
+        <input type="number" name="leverage" id="leverage" placeholder="Leverage" class="left-input" />
+        <input type="number" name="entry" id="entry" placeholder="Entry" class="left-input" />
+        <input type="number" name="stop-loss" id="stop-loss" placeholder="Stop loss" class="left-input" />
+        <input type="number" name="take-profit" id="take-profit" placeholder="Take profit" class="left-input" />
+        <div class="buttons">
+          <button class="reset" id="reset" onclick="reset()">Reset</button>
+          <button class="calculate" id="calculate" onclick="calculate()">Calculate</button>
+        </div>
+      </div>
+      <div class="s right-side">
+        <div class="side-title">
+          <p>Overview</p>
+        </div>
+        <input type="text" name="rr" id="rr" disabled="true" class="right-disabled-input" />
+        <input type="text" name="pwinloss" id="pwinloss" disabled="true" class="right-disabled-input" />
+        <input type="text" name="position-size" id="position-size" disabled="true" class="right-disabled-input" />
+        <input type="text" name="trade-amount" id="trade-amount" disabled="true" class="right-disabled-input" />
+        <div class="summary-field">
+          <textarea type="text" name="summary" id="summary" class="summary" disabled="true"> </textarea>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

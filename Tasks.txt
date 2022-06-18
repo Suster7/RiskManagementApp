@@ -1,0 +1,8 @@
+Version 2.1
+
+1. Fix NaN throw on overview
+2. Validate form for must have fields
+3. Cookies to remember balance and risk
+
+--------------------------------------
+
